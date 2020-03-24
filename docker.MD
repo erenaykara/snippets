@@ -7,3 +7,8 @@ docker run -itd --name="debug-failing-test" "compsa/panel-producenta-tests:ruby-
 ```
 docker cp . 2032-panel-producenta-tests--debug-failing-test:/usr/src/app
 ```
+
+#### Zalogować się do kontenera
+```
+docker exec -it 2032-panel-producenta-tests--debug-failing-test bash -l
+```
