@@ -1,3 +1,9 @@
+#### Budowanie obrazu
+```
+docker build -f docker/tests/Dockerfile -t name:tag .
+```
+
+
 #### Stworzenie kontenera na podstawie obrazu
 ```
 docker run -itd --name="debug-failing-test" "compsa/panel-producenta-tests:ruby-2.6.5"
