@@ -1,20 +1,24 @@
-#### Budowanie obrazu
+Budowanie obrazu
 ```
 docker build -f docker/tests/Dockerfile -t name:tag .
 ```
 
-
-#### Stworzenie kontenera na podstawie obrazu
+Stworzenie kontenera na podstawie obrazu
 ```
 docker run -itd --name="debug-failing-test" "compsa/panel-producenta-tests:ruby-2.6.5"
 ```
 
-#### Skopiowanie plików do kontenera:
+Skopiowanie plików do kontenera:
 ```
 docker cp . 2032-panel-producenta-tests--debug-failing-test:/usr/src/app
 ```
 
-#### Zalogować się do kontenera
+Zalogować się do kontenera
 ```
 docker exec -it 2032-panel-producenta-tests--debug-failing-test bash -l
+```
+
+Uruchomić ponownie zatrzymany kontener
+```
+docker start 2032-panel-producenta-tests--debug-failing-test
 ```
