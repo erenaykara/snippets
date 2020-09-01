@@ -22,3 +22,12 @@ Uruchomić ponownie zatrzymany kontener
 ```
 docker start 2032-panel-producenta-tests--debug-failing-test
 ```
+
+Uruchomić kontener w taki sposób, aby kontener widział moją lokalną bazę danych oraz żebym mógł otworzyć aplikację odpaloną w kontenerze przeglądarkę.
+```
+docker run -itd -p 3005:3000 --name="price_tag_debug2" pp:2368-with-gsubed-host-in-database-yml
+docker exec -it price_tag_debug2  bash -l
+vim config/database.yml
+# Zamień localhost na host.docker.internal
+bundle exec rails server
+```
