@@ -26,6 +26,8 @@ docker start 2032-panel-producenta-tests--debug-failing-test
 Uruchomić kontener w taki sposób, aby kontener widział moją lokalną bazę danych oraz żebym mógł otworzyć aplikację odpaloną w kontenerze przeglądarkę.
 ```
 docker run -itd -p 3005:3000 --name="price_tag_debug2" pp:2368-with-gsubed-host-in-database-yml
+# 3005 to port pod jakim będę uruchamiał apkę u siebie lokalnie, a 3000 to port na jakim uruchomię w kontenerze serwer.
+
 docker exec -it price_tag_debug2  bash -l
 vim config/database.yml
 # Zamień localhost na host.docker.internal
