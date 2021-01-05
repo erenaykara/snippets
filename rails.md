@@ -3,3 +3,8 @@
 # config/database.yml
 prepared_statements: false
 ```
+
+List all rake tasks with source path
+```
+rake -W
+```
