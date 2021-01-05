@@ -15,3 +15,9 @@ List databases
 ```
 \l
 ```
+
+
+List roles
+```
+\du
+```
