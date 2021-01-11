@@ -33,3 +33,28 @@ vim config/database.yml
 # Zamień localhost na host.docker.internal
 bundle exec rails server
 ```
+
+
+Postgres for a rails app in docker:
+```
+docker pull postgres:9.6.10
+docker volume create pgdata
+docker run -itd \
+  -v pgdata:/var/lib/postgresql/data \
+  -e POSTGRES_PASSWORD=abc123! \
+  -e POSTGRES_USER=alpha \
+  -e POSTGRES_DB=alpha_dev \
+  -p 5433:5432 \
+  --name="postgres-for-alpha" "postgres:9.6.10"
+
+psql postgresql://postgres:password@localhost:5433/postgres
+CREATE ROLE alpha WITH SUPERUSER LOGIN PASSWORD 'abc123!';
+
+# use 5433 as db host in database.yml
+rake db:create
+
+
+heroku pg:backups:capture
+heroku pg:backups:download b2538
+docker exec postgres-for-alpha pg_restore --verbose --clean --no-acl --no-owner -h postgres --dbname=postgresql://alpha:abc123!@127.0.0.1:5433/alpha_dev latest.dump
+```
