@@ -56,5 +56,7 @@ rake db:create
 
 heroku pg:backups:capture
 heroku pg:backups:download b2538
-docker exec postgres-for-alpha pg_restore --verbose --clean --no-acl --no-owner -h postgres --dbname=postgresql://alpha:abc123!@127.0.0.1:5433/alpha_dev latest.dump
+docker exec postgres-for-alpha pg_restore \
+  --verbose --clean --no-acl --no-owner \
+  -h postgres --dbname=postgresql://alpha:abc123!@127.0.0.1:5433/alpha_dev latest.dump
 ```
