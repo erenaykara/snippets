@@ -1,7 +1,9 @@
 ```ruby
-aggregate_failures "testing response" do
-  expect(response.status).to eq(200)
-  expect(response.headers).to include("Content-Type" => "application/json")
-  expect(response.body).to eq('{"message":"Success"}')
+it "renders the headers" do
+  aggregate_failures do
+    expect(mail.subject).to eq("Price list from Test")
+    expect(mail.bcc).to eq(["abc@company.com"])
+    expect(mail.from).to eq(["company@email.com"])
+  end
 end
 ```
