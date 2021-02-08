@@ -12,3 +12,13 @@ Prepare custom scope pattern for rubymine of files changed in current branch:
 ```
 git diff --name-status 3-27-stable | awk '{print "file:"$2}' | paste -sd "|" -  | sed 's/|/||/g'
 ```
+
+Monitor process
+```
+top -pid 94091
+```
+
+List trace of process
+```
+sudo dtruss -s -p 94091
+```
