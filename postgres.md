@@ -22,3 +22,8 @@ List roles
 ```
 \du
 ```
+
+Copy database locally
+```
+CREATE DATABASE production_copy WITH TEMPLATE production;
+```
