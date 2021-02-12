@@ -22,3 +22,8 @@ List trace of process
 ```
 sudo dtruss -s -p 94091
 ```
+
+List puma ports in format for top tool.
+```
+pids=( $(ps aux | grep puma | grep -v Cellar | awk '{print $2}') ) ; echo "${pids[@]/#/-pid }"
+```
