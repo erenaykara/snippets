@@ -43,7 +43,7 @@ hej. I am File
 ```
 
 #### Memory benchmark
-```
+```ruby
 gem 'get_process_mem'
 
 @memory_benchmarks = []
