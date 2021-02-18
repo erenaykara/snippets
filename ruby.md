@@ -42,3 +42,15 @@ Traceback (most recent call last):
 hej. I am File
 ```
 
+#### Memory benchmark
+```
+gem 'get_process_mem'
+
+@memory_benchmarks = []
+def log_memory(text)
+  mem = GetProcessMem.new.mb
+  @memory_benchmarks.push(mem)
+  puts ("after #{text} PMEM: #{mem}")
+end
+```
+
