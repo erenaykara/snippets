@@ -8,3 +8,9 @@ List all rake tasks with source path
 ```
 rake -W
 ```
+
+
+Enable sql logs in rails console or runner
+```
+ActiveRecord::Base.logger = Logger.new(STDOUT)
+```
