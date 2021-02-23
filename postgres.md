@@ -1,6 +1,9 @@
 Start console
 ```
 psql postgres
+
+# or in asdf
+ psql -d default
 ```
 
 Create role and databases
