@@ -51,3 +51,9 @@ Direct output - [source](https://askubuntu.com/questions/420981/how-do-i-save-te
 |& tee    ||   yes    |   yes    ||   yes    |   yes    || overwrite
 |& tee -a ||   yes    |   yes    ||   yes    |   yes    ||  append
 ```
+
+
+Change user on aws
+```
+sudo -i -u deploy
+```
