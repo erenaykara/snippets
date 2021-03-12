@@ -14,3 +14,8 @@ Enable sql logs in rails console or runner
 ```
 ActiveRecord::Base.logger = Logger.new(STDOUT)
 ```
+
+Refer url helper in rails console
+```
+app.delete_all_merchants_promo_path
+```
