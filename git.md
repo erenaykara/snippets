@@ -9,5 +9,5 @@ git revert -m 1 <commit_sha>
 
 git push specific commit to specific remote branch
 ```
-git push upstream 159aef45:master --force-with-lease
+git push upstream 159aef45:master --force
 ```
