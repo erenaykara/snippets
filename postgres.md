@@ -30,3 +30,8 @@ Copy database locally
 ```
 CREATE DATABASE production_copy WITH TEMPLATE production;
 ```
+
+Import dump from heroku
+```
+pg_restore latest.dump --dbname=alpha_production --role alpha --no-owner --clean --if-exists
+```
