@@ -19,3 +19,9 @@ Refer url helper in rails console
 ```
 app.delete_all_merchants_promo_path
 ```
+
+Make hash accepting keys as string or symbols:
+```
+result.with_indifferent_access
+```
+https://api.rubyonrails.org/v4.2/classes/ActiveSupport/HashWithIndifferentAccess.html
