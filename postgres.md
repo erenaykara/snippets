@@ -35,3 +35,8 @@ Import dump from heroku
 ```
 pg_restore latest.dump --dbname=alpha_production --role alpha --no-owner --clean --if-exists
 ```
+
+Run sql command from unix
+```
+psql postgres -c "DROP DATABASE alpha_prd_9_jun_copy;"
+```
