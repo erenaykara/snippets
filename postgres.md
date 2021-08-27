@@ -40,3 +40,8 @@ Run sql command from unix
 ```
 psql postgres -c "DROP DATABASE alpha_prd_9_jun_copy;"
 ```
+
+Find slowest query:
+```sql
+SELECT * FROM pg_stat_statements ORDER BY max_exec_time DESC LIMIT 1;
+```
