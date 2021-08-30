@@ -54,3 +54,9 @@ def log_memory(text)
 end
 ```
 
+#### Parse stdout provided by piping: `cat log.log | ruby_script`
+```ruby
+#!/usr/bin/env ruby
+
+ARGF.each_line do |line|
+```
