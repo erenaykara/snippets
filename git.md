@@ -11,3 +11,8 @@ git push specific commit to specific remote branch
 ```
 git push upstream 159aef45:master --force
 ```
+
+Filter git log by author and filename changed
+```
+git log --author "Mariusz" -- '*serializer*'
+```
