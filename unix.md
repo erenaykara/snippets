@@ -57,3 +57,8 @@ Change user on aws
 ```
 sudo -i -u deploy
 ```
+
+Find source location of alias "gb"
+```
+sudo grep -r "alias gb" /home/mariusz
+```
