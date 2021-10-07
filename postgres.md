@@ -18,6 +18,9 @@ DROP DATABASE alpharecycling;
 List databases
 ```
 \l
+
+# + its size
+\l+
 ```
 
 
