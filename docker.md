@@ -37,18 +37,17 @@ bundle exec rails server
 
 Postgres for a rails app in docker:
 ```
-docker pull postgres:9.6.10
+docker pull postgres:13.4-alpine
 docker volume create pgdata
-docker run -itd \
-  -v pgdata:/var/lib/postgresql/data \
-  -e POSTGRES_PASSWORD=abc123! \
+
+# -rm will remove container after stopping it.
+docker run --rm \
+   -v pgdata:/var/lib/postgresql/data \
   -e POSTGRES_USER=alpha \
   -e POSTGRES_DB=alpha_dev \
-  -p 5433:5432 \
-  --name="postgres-for-alpha" "postgres:9.6.10"
-
-psql postgresql://postgres:password@localhost:5433/postgres
-CREATE ROLE alpha WITH SUPERUSER LOGIN PASSWORD 'abc123!';
+  -e POSTGRES_HOST_AUTH_METHOD=trust \
+  --name "postgres-for-alpha" \
+  -p 5433:5432 "postgres:13.4-alpine"
 
 # use 5433 as db host in database.yml
 rake db:create
