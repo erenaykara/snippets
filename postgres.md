@@ -48,3 +48,13 @@ Find slowest query:
 ```sql
 SELECT * FROM pg_stat_statements ORDER BY max_exec_time DESC LIMIT 1;
 ```
+
+przebudowuje index (samo przebudowanie może nic nie dać dla query plannera, bo statystyki się nie zmienią. VACUUM ANALYZE może być potrzebny)
+```
+REINDEX table prices;
+```
+
+usuwa bloata, aktualizuje stataystyki
+```
+VACUUM ANALYZE prices;
+```
