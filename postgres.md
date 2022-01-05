@@ -58,3 +58,8 @@ usuwa bloata, aktualizuje stataystyki
 ```
 VACUUM ANALYZE prices;
 ```
+
+aktualizacja statystk
+```
+ANALYZE prices;
+```
