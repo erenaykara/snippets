@@ -66,4 +66,5 @@ sudo grep -r "alias gb" /home/mariusz
 trace the route an IP packet would follow to some internet host
 ```
 traceroute
+mtr
 ```
