@@ -66,5 +66,7 @@ sudo grep -r "alias gb" /home/mariusz
 trace the route an IP packet would follow to some internet host
 ```
 traceroute
-mtr
+cd /usr/local/Cellar/mtr/0.95/sbin
+sudo mtr rollbar.com
+
 ```
