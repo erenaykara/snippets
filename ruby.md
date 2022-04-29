@@ -75,3 +75,16 @@ Debug when source_location not possible
 ```
 TracePoint
 ```
+
+#### Run ruby against each line from pipe.
+```
+cat filename | ruby script.rb
+```
+
+```ruby
+# script.rb
+STDIN.each_line.to_a
+  .map { |line| matches = line.match(/job_id=([a-z0-9]+)/); matches[1] }
+  .uniq
+  .each { |job_id| line = info_start_lines.find(job_id); puts line.worker_klass }
+```
