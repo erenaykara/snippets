@@ -68,5 +68,9 @@ trace the route an IP packet would follow to some internet host
 traceroute
 cd /usr/local/Cellar/mtr/0.95/sbin
 sudo ./mtr rollbar.com -c 1800 -w > ~/mtr.txt
+```
 
+Check DNS
+```
+nslookup grg.convertersapp.com
 ```
