@@ -52,6 +52,11 @@ Direct output - [source](https://askubuntu.com/questions/420981/how-do-i-save-te
 |& tee -a ||   yes    |   yes    ||   yes    |   yes    ||  append
 ```
 
+Curl command that writes response to file and allows multiple run (don't wait for response)
+```
+curl 'http://dev-alpha.convertersapp.com:3000/admin/eibs.json?context=grader' -X POST -H 'Accept: */*' -H 'Content-Type: application/json' -H 'X-CSRF-Token: V2Phw9ATe1qbd3hdKBkE/sYW9nS5DTg+Q1XJCz7a87XSo1Y4crNCIOiP6ex3aQICqGnaAPfiG3KLrea6LIJq/w==' -H 'Cookie: _alpha_app_web_session=aWNWMjU5TlhIeFEr' -H 'Sec-Fetch-Mode: cors' --data-raw '{\"eib_form\":{\"name\":\"test2\",\"company_name\":\"test12\",\"email\":\"test12@test.test\",\"username\":\"#{prefix}\",\"prefix\":\"#{prefix}\",\"client\":1846,\"permissions\":{\"packing_list_management\":false,\"converter_assays_visibility\":false,\"see_metal_prices_tab\":false,\"see_general_archived_cc\":false}}}' >> results 2>1 &
+```
+
 
 Change user on aws
 ```
