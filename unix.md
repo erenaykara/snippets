@@ -79,3 +79,8 @@ Check DNS
 ```
 nslookup grg.convertersapp.com
 ```
+
+List proceses that uses port:
+```
+lsof -i :3000
+```
