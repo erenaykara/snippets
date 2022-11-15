@@ -1,6 +1,9 @@
 Login to mysql shell:
 ```
 mysql -u root -p
+
+# or without pasword when mysql installed with brew
+mysql -u root
 ```
 
 List dbs
