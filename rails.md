@@ -13,6 +13,7 @@ rake -W
 Enable sql logs in rails console or runner
 ```
 ActiveRecord::Base.logger = Logger.new($stdout)
+ActiveRecord::Base.logger = Logger.new("#{Rails.root}/log/activerecord.log")
 ```
 
 Refer url helper in rails console
