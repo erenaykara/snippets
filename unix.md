@@ -84,3 +84,8 @@ List proceses that uses port:
 ```
 lsof -i :3000
 ```
+
+Disk space on all partitions
+```
+df -h
+```
