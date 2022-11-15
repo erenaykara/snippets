@@ -8,6 +8,10 @@ List dbs
 SHOW DATABASES;
 ```
 
+```
+CREATE DATABASE menagerie;
+```
+
 Drop db:
 ```
 DROP database mvp_test;
