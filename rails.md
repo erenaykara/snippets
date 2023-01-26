@@ -26,3 +26,8 @@ Make hash accepting keys as string or symbols:
 result.with_indifferent_access
 ```
 https://api.rubyonrails.org/v4.2/classes/ActiveSupport/HashWithIndifferentAccess.html
+
+Create only development db
+```
+SKIP_TEST_DATABASE=true rake db:create
+```
