@@ -89,3 +89,8 @@ Disk space on all partitions
 ```
 df -h
 ```
+
+Run rspec on all tests from this branch
+```
+git diff --name-only develop | grep _spec | xargs bundle exec rspec
+```
