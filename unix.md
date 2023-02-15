@@ -94,3 +94,8 @@ Run rspec on all tests from this branch
 ```
 git diff --name-only develop | grep _spec | xargs bundle exec rspec
 ```
+
+List lines as single line space separated
+```
+git diff --name-only develop | grep _spec | paste -sd' ' -
+```
