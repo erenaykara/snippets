@@ -59,3 +59,8 @@ docker exec postgres-for-alpha pg_restore \
   --verbose --clean --no-acl --no-owner \
   -h postgres --dbname=postgresql://alpha:abc123!@127.0.0.1:5433/alpha_dev latest.dump
 ```
+
+Up only 1 service from many in docker compose
+```
+docker-compose -f .docker/local/docker-compose.yml --env-file .env.development.example up rabbitmq -d
+```
