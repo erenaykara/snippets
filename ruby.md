@@ -90,3 +90,9 @@ Debug when source_location not possible
 TracePoint
 ```
 
+Run shell command and fail on non-zero status
+```ruby
+stdout, stderr, status = Open3.capture3("bundle exec rails db -p < #{path}")
+raise StandardError, stderr.join(" ") if status != 0
+```
+
