@@ -77,12 +77,24 @@ STDIN.each_line.to_a
 
 #### Heredocs
 ```
-angelica = <<TEXT
+angelica = <<-TEXT
 I’m a girl in a world in which
 My only job is to marry rich
 My father has no sons so I’m the one
 Who has to social climb for one
 TEXT
+
+sql = <<-SQL.squish
+          SELECT
+            REFERENCED_TABLE_NAME
+          FROM
+            information_schema.referential_constraints
+          WHERE
+            CONSTRAINT_SCHEMA = '#{ActiveRecord::Base.connection.current_database}'
+            AND TABLE_NAME = '#{entity.table.name}'
+            AND REFERENCED_TABLE_NAME = '#{primary_name}'
+            and unique_constraint_name = 'PRIMARY'
+        SQL
 ```
 
 Debug when source_location not possible
