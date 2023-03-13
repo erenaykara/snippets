@@ -69,5 +69,5 @@ Copy volume to create copy of mysql container
 ```
 ~/.bin/docker-convenience-scripts/docker_clone_volume.sh core-api-source-for-cloning core-api-copy
 
-docker run --hostname=2694985803a4 --env=MYSQL_VERSION=5.7.40-1.el7 --env=MYSQL_SHELL_VERSION=8.0.31-1.el7 --env=MYSQL_ROOT_PASSWORD=test --env=TZ=Europe/Berlin --env=PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin --env=GOSU_VERSION=1.14 --env=MYSQL_MAJOR=5.7 --network=core-api-db_default -p 3306:3306 --restart=no --label='com.docker.compose.project=core-api-db' --label='com.docker.compose.service=mgis-mysql' --label='com.docker.compose.version=2.13.0' --runtime=runc --mount source=core-api-copy,destination=/var/lib/mysql --name=db-test -d mgis/mysql
+docker run --env=MYSQL_ROOT_PASSWORD=test --env=TZ=Europe/Berlin --network=core-api-db_default -p 3306:3306 --restart=no --mount source=core-api-copy,destination=/var/lib/mysql --name=db-test -d mgis/mysql
 ```
