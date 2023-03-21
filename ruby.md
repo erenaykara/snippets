@@ -111,11 +111,11 @@ raise StandardError, stderr.join(" ") if status != 0
 class methods trick
 ```ruby
 class << self
-    def most_popular
-    end
-
-    def the_king
-    end
+  def most_popular
   end
+
+  def the_king
+  end
+end
 ```
 
