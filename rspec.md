@@ -7,3 +7,24 @@ it "renders the headers" do
   end
 end
 ```
+
+
+What is '+' and what is '-' in the test failure output?
+```ruby
+  it "????" do
+    body = { test: 1 }.to_json
+    response = OpenStruct.new(body: body)
+
+    expect(response).to have_json_response(
+      test: 2
+    )
+  end
+```
+
+```shell
+expected that {:test=>1} to have json response {:test=>2}
+Diff:
+@@ -1 +1 @@
+-:test => 2,
++:test => 1,
+```
