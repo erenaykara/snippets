@@ -19,12 +19,23 @@ What is '+' and what is '-' in the test failure output?
       test: 2
     )
   end
-```
 
-```shell
 expected that {:test=>1} to have json response {:test=>2}
 Diff:
 @@ -1 +1 @@
 -:test => 2,
 +:test => 1,
+```
+
+```ruby
+it "is ??" do
+  a = Product.new(id: 1)
+  expect(a).to have_attributes(id: 2)
+end
+
+Failure/Error: expect(a).to have_attributes(id: 2)
+   Diff:
+   @@ -1 +1 @@
+   -:id => 2,
+   +:id => 1,
 ```
