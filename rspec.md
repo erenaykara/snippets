@@ -39,3 +39,15 @@ Failure/Error: expect(a).to have_attributes(id: 2)
    -:id => 2,
    +:id => 1,
 ```
+
+```ruby
+it "??" do
+  left = [1, 2]
+  expect(left).to match_array([1, 3])
+end
+
+expected collection contained:  [1, 3]
+actual collection contained:    [1, 2]
+the missing elements were:      [3]
+the extra elements were:        [2]       
+```
