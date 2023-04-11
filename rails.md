@@ -31,3 +31,8 @@ Create only development db
 ```
 SKIP_TEST_DATABASE=true rake db:create
 ```
+
+Cast user input into boolean. https://api.rubyonrails.org/classes/ActiveModel/Type/Boolean.html
+```
+cast_hidden = ActiveModel::Type::Boolean.new.cast(hidden)
+```
