@@ -119,3 +119,38 @@ class << self
 end
 ```
 
+Documenting a method
+```ruby
+  # This shared example allows testing the pagination feature of a graphQL query
+  #
+  # @param [Symbol] resource - Name of the graphQL resource
+  # @param [Lambda] pre_check - You can define a check that will be called before pagination expectations
+  # @param [String] order_column (default: "id") - Testing pagination without explicit order leads to random failures.
+  #                                                By default we order by "id", but sometimes it is not possible,
+  #                                                because few graphQL queries does not allow ordering by "id".
+  #                                                Then you can use custom value by providing this argument.
+  #                                                Look at the example 2
+  # @param [String] order_klass -(default: nil) - To set ordering in graphQL, we need to include
+  #                                               in the query the ordering class.
+  #                                               In the most cases we can compute it from the resource argument.
+  #                                               But in some cases it is not possible. Look at the example 3
+  #
+  # @example 1
+  #   # The most basic example
+  #   it_behaves_like "paginated query", resource: :addresses do
+  #     let(:records) { addresses }
+  #   end
+  #
+  # @example 2
+  #   # Usage of order_column argument
+  #   it_behaves_like "paginated query", resource: :innoProviders, order_column: "gesnr" do
+  #     let(:records) { inno_providers }
+  #   end
+  #
+  # @example 3
+  #   # Usage of order_klass argument
+  #   it_behaves_like "paginated query", resource: :zipcodes, order_klass: "XGeoZipcodesOrderParam!" do
+  #     let(:records) { zipcodes }
+  #   end
+```
+
