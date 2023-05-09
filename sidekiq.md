@@ -9,6 +9,6 @@ Sidekiq.redis { |conn| conn.flushdb }
 
 #### Log outside of sidekiq worker class
 ```ruby
-logger = Logger.new(STDOUT)
+logger = Sidekiq.logger
 logger.info "Value"
 ```
