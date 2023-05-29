@@ -3,6 +3,9 @@
 2.
 ```
 rails console
+```
+3.
+```
 Sidekiq.redis { |conn| conn.flushdb }
 ```
 3. Restart redis/sidekiq
