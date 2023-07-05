@@ -134,6 +134,7 @@ Documenting a method
   #                                               in the query the ordering class.
   #                                               In the most cases we can compute it from the resource argument.
   #                                               But in some cases it is not possible. Look at the example 3
+  # @return [Array<Arel::Nodes::As, Symbol>] - lists of fields to be selected by SQL query  
   #
   # @example 1
   #   # The most basic example
