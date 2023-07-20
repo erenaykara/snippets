@@ -1,6 +1,7 @@
 ## VIM
 * hl -> left,right
 * jk -> down,up
+* o/O -> insert line below/above
 
 
 ## ideavim
