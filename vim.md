@@ -2,6 +2,8 @@
 * hl -> left,right
 * jk -> down,up
 * o/O -> insert line below/above
+* Ctrl + U/D: Scroll up/down half a screen.
+* Ctrl + B/F: Scroll backward/forward one screen
 
 
 ## ideavim
