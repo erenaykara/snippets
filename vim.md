@@ -5,6 +5,7 @@
 * Ctrl + U/D: Scroll up/down half a screen.
 * Ctrl + B/F: Scroll backward/forward one screen
 * x - delete character
+* p - put previously deleted text after cursor
 
 ## vim-surround
 suround selected text with curly braces:
