@@ -9,6 +9,8 @@
 * ciw - remove word and start insert mode
 * cc - delete line and start insert mode
 * dd - delete line and stay in normal mode
+* gg - go to top of file
+* G - go to bottom of file
 
 ## vim-surround
 suround selected text with curly braces:
