@@ -6,6 +6,9 @@
 * Ctrl + B/F: Scroll backward/forward one screen
 * x - delete character
 * p - put previously deleted text after cursor
+* ciw - remove word and start insert mode
+* cc - delete line and start insert mode
+* dd - delete line and stay in normal mode
 
 ## vim-surround
 suround selected text with curly braces:
