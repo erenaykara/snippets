@@ -1,16 +1,29 @@
 ## VIM
+operators
+* x - delete character
+
+* 
+motions
+
+
 * hl -> left,right
 * jk -> down,up
 * o/O -> insert line below/above
 * Ctrl + U/D: Scroll up/down half a screen.
 * Ctrl + B/F: Scroll backward/forward one screen
-* x - delete character
+
 * p - put previously deleted text after cursor
 * ciw - remove word and start insert mode
 * cc - delete line and start insert mode
 * dd - delete line and stay in normal mode
+* dw - delete word and stay in normal mode(space is also removed before next word)
+* de - delete word and stay in normal mode 
+* d$ - delete to the end of the line
 * gg - go to top of file
 * G - go to bottom of file
+* A - go to the end of the line and insert (append)
+* w - go to the next word
+* e - go to the next word
 
 ## vim-surround
 suround selected text with curly braces:
