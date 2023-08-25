@@ -1,6 +1,10 @@
 ## VIM
+vim tutor: Lesson 3.4: MORE CHANGES USING c
+
 operators
 * x - delete character
+* r - replace character. e.g. rg will replace current char with g
+* c - change. e.g. ce change until end of the word
 
 * 
 motions
