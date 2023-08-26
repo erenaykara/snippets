@@ -1,5 +1,5 @@
 ## VIM
-vim tutor: Lesson 3.4: MORE CHANGES USING c
+vim tutor: esson 5.4: RETRIEVING AND MERGING FILES
 
 ### operators
 * x - delete character
