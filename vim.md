@@ -1,24 +1,36 @@
 ## VIM
 vim tutor: Lesson 3.4: MORE CHANGES USING c
 
-operators
+### operators
 * x - delete character
 * r - replace character. e.g. rg will replace current char with g
-* c - change. e.g. ce change until end of the word
+* c - change. e.g. ce change until end of the word, cd, c$
 * p - put previously deleted text after cursor
 * 
 * 
-motions
+### motions
 * w - go to the next word
 * e - go to the next word
 
+### search:
+* / - start searching
+* ? - start searching in backward direction)
+* n - next occurence
+* N - prev occurence
 
+### substitute
+* :s/thee/the - replace single occurence
+* :s/thee/the/g - replace all occurences
+
+### other:
 * hl -> left,right
 * jk -> down,up
 * o/O -> insert line below/above
 * Ctrl + U/D: Scroll up/down half a screen.
 * Ctrl + B/F: Scroll backward/forward one screen
-
+* Ctrl+G - current location in the file
+* % - go to matching bracket
+* v - visual selection mode
 
 * ciw - remove word and start insert mode
 * cc - delete line and start insert mode
