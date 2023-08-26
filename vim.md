@@ -5,9 +5,12 @@ operators
 * x - delete character
 * r - replace character. e.g. rg will replace current char with g
 * c - change. e.g. ce change until end of the word
-
+* p - put previously deleted text after cursor
+* 
 * 
 motions
+* w - go to the next word
+* e - go to the next word
 
 
 * hl -> left,right
@@ -16,7 +19,7 @@ motions
 * Ctrl + U/D: Scroll up/down half a screen.
 * Ctrl + B/F: Scroll backward/forward one screen
 
-* p - put previously deleted text after cursor
+
 * ciw - remove word and start insert mode
 * cc - delete line and start insert mode
 * dd - delete line and stay in normal mode
@@ -26,8 +29,6 @@ motions
 * gg - go to top of file
 * G - go to bottom of file
 * A - go to the end of the line and insert (append)
-* w - go to the next word
-* e - go to the next word
 
 ## vim-surround
 suround selected text with curly braces:
