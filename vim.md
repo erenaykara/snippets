@@ -1,5 +1,5 @@
 ## VIM
-vim tutor: esson 5.4: RETRIEVING AND MERGING FILES
+vim tutor: Lesson 7.1: GETTING HEL
 
 ### operators
 * x - delete character
@@ -20,6 +20,9 @@ vim tutor: esson 5.4: RETRIEVING AND MERGING FILES
 * ? - start searching in backward direction)
 * n - next occurence
 * N - prev occurence
+* :set ic - ignore case while searching
+* :set noic - no ingore icase
+* /phrase/c - ignore case one time while searching
 
 ### substitute
 * :s/thee/the - replace single occurence
