@@ -8,6 +8,7 @@ vim tutor: esson 5.4: RETRIEVING AND MERGING FILES
 * p - put previously deleted text after cursor
 * a - append after cursor
 * A - append at the end of the line
+* y - yank (copy). yy yanks whole line. yw janks word.
 
 * 
 ### motions
@@ -48,6 +49,7 @@ vim tutor: esson 5.4: RETRIEVING AND MERGING FILES
 * d$ - delete to the end of the line
 * gg - go to top of file
 * G - go to bottom of file
+* $ - go to the end of the line
 
 
 ## vim-surround
