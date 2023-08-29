@@ -53,6 +53,7 @@ vim tutor: Lesson 7.1: GETTING HEL
 * gg - go to top of file
 * G - go to bottom of file
 * $ - go to the end of the line
+* gx - open url under cursor in browser
 
 
 ## vim-surround
