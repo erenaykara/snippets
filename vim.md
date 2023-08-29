@@ -54,6 +54,7 @@ vim tutor: Lesson 7.1: GETTING HEL
 * G - go to bottom of file
 * $ - go to the end of the line
 * gx - open url under cursor in browser
+* ct, - change to first ,
 
 
 ## vim-surround
