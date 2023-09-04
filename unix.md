@@ -1,6 +1,7 @@
 Bulk rename files:
 ```
 git ls-files | rename -s 'billing_document' 'document'
+-p to handle also directory rename.
 ```
 
 Select second column:
