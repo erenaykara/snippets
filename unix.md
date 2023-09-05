@@ -4,6 +4,11 @@ git ls-files | rename -s 'billing_document' 'document'
 -p to handle also directory rename.
 ```
 
+Substitute in many files:
+```
+for f in $(git diff --name-only develop | grep -v "db"); do gsed -i "s/AgentAgent/Agent/g" $f; done
+```
+
 Select second column:
 ```
 git diff --name-status 3-27-stable | awk '{print $2}'
