@@ -1,5 +1,4 @@
 ## VIM
-vim tutor: Lesson 7.1: GETTING HEL
 
 ### operators
 * x - delete character
