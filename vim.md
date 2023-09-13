@@ -12,8 +12,10 @@ idea vim tutor Lesson 3.4: MORE CHANGES USING c
 
 * 
 ### motions
-* w - go to the next word
-* e - go to the next word
+* w - go to the beginning of next word
+* e - go to the end of next word
+* b - backward to the beginning of word
+* ge - backward to the end of the word
 
 ### search:
 * / - start searching
