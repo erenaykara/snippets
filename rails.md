@@ -32,6 +32,14 @@ Create only development db
 SKIP_TEST_DATABASE=true rake db:create
 ```
 
+Create table with non standard primary key
+```ruby
+create_table :external_product_types, id: false do |t|
+  t.string :type, null: false, primary_key: true
+  t.timestamps
+end
+```
+
 Cast user input into boolean. https://api.rubyonrails.org/classes/ActiveModel/Type/Boolean.html
 ```
 cast_hidden = ActiveModel::Type::Boolean.new.cast(hidden)
