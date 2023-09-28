@@ -1,5 +1,7 @@
 ## VIM
 
+vim guides: *02.5*	Undo and Redo
+
 ### operators
 * x - delete character
 * r - replace character. e.g. rg will replace current char with g
