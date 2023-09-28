@@ -28,7 +28,9 @@ idea vim tutor Lesson 3.4: MORE CHANGES USING c
 
 ### substitute
 * :s/thee/the - replace single occurence
-* :s/thee/the/g - replace all occurences
+* :s/thee/the/g - replace all occurences in the line
+* :%s/thee/the/g - replace all occurences in the whole file
+* :%s/thee/the/gc - the same as above but ask for Confirm before every corectness
 
 ### modes
 * R - turn on replace mode
