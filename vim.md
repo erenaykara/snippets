@@ -1,5 +1,4 @@
 ## VIM
-idea vim tutor Lesson 3.4: MORE CHANGES USING c
 
 ### operators
 * x - delete character
