@@ -46,6 +46,7 @@ vim guides: *02.5*	Undo and Redo
 * Ctrl + B/F: Scroll backward/forward one screen
 * Ctrl+G - current location in the file
 * % - go to matching bracket
+* Ctrl + R - redo (undo u)
 
 * v  motion  :w FILENAME  saves the Visually selected lines in file FILENAME.
 
