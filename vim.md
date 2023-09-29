@@ -1,6 +1,6 @@
 ## VIM
 
-vim guides: *02.5*	Undo and Redo
+"/usr/share/vim/vim90/doc/usr_03.txt" [readonly] line 413 of 663 --62%-- col 25
 
 ### operators
 * x - delete character
@@ -10,6 +10,10 @@ vim guides: *02.5*	Undo and Redo
 * a - append after cursor
 * A - append at the end of the line
 * y - yank (copy). yy yanks whole line. yw janks word.
+* f - find. fe goes to the first e in line
+* F - opposite direction f
+* ; - repeat f to the right
+* , - repeat f to the left
 
 * 
 ### motions
@@ -26,6 +30,7 @@ vim guides: *02.5*	Undo and Redo
 * :set ic - ignore case while searching
 * :set noic - no ingore icase
 * /phrase/c - ignore case one time while searching
+*  * - position cursor under a word and press *. It will search for that word.
 
 ### substitute
 * :s/thee/the - replace single occurence
@@ -47,6 +52,7 @@ vim guides: *02.5*	Undo and Redo
 * Ctrl+G - current location in the file
 * % - go to matching bracket
 * Ctrl + R - redo (undo u)
+* U - undo all changes in the line
 
 * v  motion  :w FILENAME  saves the Visually selected lines in file FILENAME.
 
@@ -61,6 +67,8 @@ vim guides: *02.5*	Undo and Redo
 * $ - go to the end of the line
 * gx - open url under cursor in browser
 * ct, - change to first ,
+* ZZ - save and exit
+* 33G go to line 33
 
 
 ## vim-surround
