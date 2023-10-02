@@ -1,6 +1,8 @@
 ## VIM
 
-"/usr/share/vim/vim90/doc/usr_03.txt" [readonly] line 413 of 663 --62%-- col 25
+*04.2*	Changing text
+"/usr/share/vim/vim90/doc/usr_04.txt" [readonly] line 75 of 516 --14%-- col 1
+
 
 ### operators
 * x - delete character
@@ -69,6 +71,9 @@
 * ct, - change to first ,
 * ZZ - save and exit
 * 33G go to line 33
+* `` - go back where you came from
+* mb - create mark named b
+* `b - go to the mark named b
 
 
 ## vim-surround
