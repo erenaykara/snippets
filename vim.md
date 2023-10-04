@@ -43,6 +43,7 @@
 ### modes
 * R - turn on replace mode
 * v - visual selection mode
+* CTRL + v - visual column selection
 
 
 ### other:
@@ -79,6 +80,11 @@
 * D  stands for  d$  (delete to end of the line)
 * C  stands for  c$  (change to end of the line)
 * s  stands for  cl  (change one character)
+* xp - swaps letter - teh -> the
+* y$ - yanks to the end of the line
+* ye - yanks the whole word
+* das - delete a sentene
+* daw - delete a word
 
 
 
