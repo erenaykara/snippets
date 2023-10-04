@@ -1,7 +1,7 @@
 ## VIM
 
-*04.3*	Repeating a change
-"/usr/share/vim/vim90/doc/usr_04.txt" [readonly] line 75 of 516 --14%-- col 1
+*07.5*	Copy text between files
+"/usr/share/vim/vim90/doc/usr_07.txt" [readonly] line 317 of 479 --66%-- col 30-31
 
 
 ### operators
@@ -45,6 +45,13 @@
 * v - visual selection mode
 * CTRL + v - visual column selection
 
+### marks
+* `` - go back where you came from
+* mb - create mark named b
+* `b - go to the mark named b
+* `. - last modify place
+* mB - create global mark named B
+
 
 ### other:
 * hl -> left,right
@@ -72,9 +79,6 @@
 * ct, - change to first ,
 * ZZ - save and exit
 * 33G go to line 33
-* `` - go back where you came from
-* mb - create mark named b
-* `b - go to the mark named b
 * x  stands for  dl  (delete character under the cursor)
 * X  stands for  dh  (delete character left of the cursor)
 * D  stands for  d$  (delete to end of the line)
