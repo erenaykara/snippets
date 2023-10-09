@@ -1,6 +1,6 @@
 ## VIM
 
-*usr_08.txt*	For Vim version 9.0.  Last change: 2021 May 20
+*usr_10.txt*	For Vim version 9.0.  Last change: 2019 Nov 22
 
 
 ### operators
