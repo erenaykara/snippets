@@ -46,6 +46,11 @@
 CTRL-W H - move window to the far left
 CTRL-W J -  move window to the bottom
 CTRL-W L -  move window to the far right
+CTRL-W + - To increase the size of a window
+CTRL-W - - To decrease the size of a window
+vim -o one.txt two.txt three.txt - open a window for each file
+vim -O one.txt two.txt three.txt - open a window for each file VERTICAl
+
 
 
 
