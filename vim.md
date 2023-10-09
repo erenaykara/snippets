@@ -1,7 +1,6 @@
 ## VIM
 
-*07.5*	Copy text between files
-"/usr/share/vim/vim90/doc/usr_07.txt" [readonly] line 317 of 479 --66%-- col 30-31
+*usr_08.txt*	For Vim version 9.0.  Last change: 2021 May 20
 
 
 ### operators
@@ -17,7 +16,6 @@
 * ; - repeat f to the right
 * , - repeat f to the left
 
-* 
 ### motions
 * w - go to the beginning of next word
 * e - go to the end of next word
@@ -39,6 +37,17 @@
 * :s/thee/the/g - replace all occurences in the line
 * :%s/thee/the/g - replace all occurences in the whole file
 * :%s/thee/the/gc - the same as above but ask for Confirm before every corectness
+
+### windows
+* :split - split window
+* :vsplit - split vertically
+* ctrl+w - jump between 2 windows
+* ctr+w hjkl - jump to the left bottom right top tab
+CTRL-W H - move window to the far left
+CTRL-W J -  move window to the bottom
+CTRL-W L -  move window to the far right
+
+
 
 ### modes
 * R - turn on replace mode
@@ -89,6 +98,11 @@
 * ye - yanks the whole word
 * das - delete a sentene
 * daw - delete a word
+* yaw - yank a word
+
+### registers
+* "qyy - copy line to register q
+* "qp - paste line from register q
 
 
 
