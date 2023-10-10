@@ -1,6 +1,6 @@
 ## VIM
 
-*usr_10.txt*	For Vim version 9.0.  Last change: 2019 Nov 22
+*10.4*	The global command
 
 
 ### operators
@@ -33,10 +33,18 @@
 *  * - position cursor under a word and press *. It will search for that word.
 
 ### substitute
+* :[range]substitute/from/to/[flags]
+* ranges:
+  * % - global, change in the whole file
+  * 1,3 - apply changes in lines from 1 to 3
+* flags:
+  * g - global, change in the whole line
+  * c - confirm, ask for confirm before every replacemenent
 * :s/thee/the - replace single occurence
 * :s/thee/the/g - replace all occurences in the line
 * :%s/thee/the/g - replace all occurences in the whole file
 * :%s/thee/the/gc - the same as above but ask for Confirm before every corectness
+* substitute has much more features, referer to help 10.4
 
 ### windows
 * :split - split window
@@ -65,6 +73,16 @@ vim -O one.txt two.txt three.txt - open a window for each file VERTICAl
 * `b - go to the mark named b
 * `. - last modify place
 * mB - create global mark named B
+
+### macros
+* qa - start recording macro with name "a"
+* q - stop recording macro
+* @a - play macro
+* example: qa^i#incclude "<Esc>$a" <Esc>jq
+           @a
+           3@a
+* @@ - play recently played macro
+* "ap - put the recorded macro into text. Then you can edit it in vim as a regular text and store it into the register again: "ny$. Now you can play corrected version of the macro
 
 
 ### other:
