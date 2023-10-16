@@ -59,9 +59,6 @@ CTRL-W - - To decrease the size of a window
 vim -o one.txt two.txt three.txt - open a window for each file
 vim -O one.txt two.txt three.txt - open a window for each file VERTICAl
 
-
-
-
 ### modes
 * R - turn on replace mode
 * v - visual selection mode
