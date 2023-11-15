@@ -16,3 +16,8 @@ Filter git log by author and filename changed
 ```
 git log --author "Mariusz" -- '*serializer*'
 ```
+
+Log evolution of a method
+```
+git log -L :status_reason_inclusion:app/models/client.rb
+```
