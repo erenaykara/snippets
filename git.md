@@ -21,3 +21,9 @@ Log evolution of a method
 ```
 git log -L :status_reason_inclusion:app/models/client.rb
 ```
+
+Ignore RuboCop Changes in git blame
+```
+vim .git-blame-ignore-revs
+# put commit hash of refactoring commmits
+```
